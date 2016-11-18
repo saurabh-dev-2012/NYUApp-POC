@@ -1,0 +1,8 @@
+html { overflow-y: scroll; }
+body { 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top; 
+    background-color: yellow;
+}
+		

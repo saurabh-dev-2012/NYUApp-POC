@@ -1,0 +1,587 @@
+html { overflow-y: scroll; }
+body {
+  width: 100%;
+ font:16px/30px "Roboto-Light";
+
+margin:0;
+color:#787878;
+}
+/******************************************** fonts ******************************************/
+@font-face {
+    font-family: 'Helvetica-Medium';
+    src: url('fonts/Helvatica/HelveticaNeue-Medium.eot');
+    src: url('fonts/Helvatica/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Helvatica/HelveticaNeue-Medium.woff2') format('woff2'),
+         url('fonts/Helvatica/HelveticaNeue-Medium.woff') format('woff'),
+         url('fonts/Helvatica/HelveticaNeue-Medium.ttf') format('truetype'),
+         url('fonts/Helvatica/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('fonts/Roboto/Roboto-Light.eot');
+    src: url('fonts/Roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto/Roboto-Light.woff2') format('woff2'),
+         url('fonts/Roboto/Roboto-Light.woff') format('woff'),
+         url('fonts/Roboto/Roboto-Light.ttf') format('truetype'),
+         url('fonts/Roboto/Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url('fonts/Roboto/Roboto-Thin.eot');
+    src: url('fonts/Roboto/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto/Roboto-Thin.woff2') format('woff2'),
+         url('fonts/Roboto/Roboto-Thin.woff') format('woff'),
+         url('fonts/Roboto/Roboto-Thin.ttf') format('truetype'),
+         url('fonts/Roboto/Roboto-Thin.svg#Roboto-Thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('fonts/Roboto/Roboto-Regular.eot');
+    src: url('fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+         url('fonts/Roboto/Roboto-Regular.woff') format('woff'),
+         url('fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+         url('fonts/Roboto/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+ @font-face {
+  font-family: 'Roboto-LightItalic';
+  src: url('fonts/Roboto/Roboto-LightItalic.eot');
+    src: url('fonts/Roboto/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto/Roboto-LightItalic.woff2') format('woff2'),
+         url('fonts/Roboto/Roboto-LightItalic.woff') format('woff'),
+         url('fonts/Roboto/Roboto-LightItalic.ttf') format('truetype'),
+         url('fonts/Roboto/Roboto-LightItalic.svg#Roboto-LightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'Roboto-ThinItalic';
+  src: url('fonts/Roboto/Roboto-ThinItalic.eot');
+    src: url('fonts/Roboto/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto/Roboto-ThinItalic.woff2') format('woff2'),
+         url('fonts/Roboto/Roboto-ThinItalic.woff') format('woff'),
+         url('fonts/Roboto/Roboto-ThinItalic.ttf') format('truetype'),
+         url('fonts/Roboto/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+  
+/*****************************************************************/
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+br { display: block; line-height: 1.6em; } 
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+input, textarea { 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+h1{}
+h2{
+font-weight:normal;
+}
+h3{}
+h4{}
+h5{}
+h6{}
+p{}
+a{}
+a:hover{}
+a:visited{}
+.clear{
+clear:both;
+}
+
+#website-wrapper{
+
+max-width:1000px;
+width:100%;
+
+
+  background: #fff;
+  padding: 25px 65px;
+  margin: 0 auto; 
+}
+
+.content-area-right{
+background: #fff none repeat scroll 0 0;
+    float: right;
+    padding:0px;
+    width:80%;
+
+}
+.site-logo {
+    float: left;
+    position: relative;
+    top:5px;
+    width: 90%;
+    z-index: 10000000;
+}
+.site-logo a{}
+.site-logo a img{
+max-width:100%;
+}
+.purple-logo-menu-left{
+float:left;
+width:25%;
+padding:25px;
+background: #5d0e8b none repeat scroll 0 0;
+   
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width:280px;
+
+}
+h2.entry-title{
+ border-color: #f1f1f1 -moz-use-text-color;
+    border-style: solid none;
+    border-width: 2px medium;
+	font:30px/30px "Roboto-Thin";
+ margin-bottom:25px;
+    padding:20px 0 20px 50px;	
+	text-transform:uppercase;
+ }
+h2.entry-title a{
+    color:#787878;
+    text-decoration:none;
+}
+ h2.entry-title span{
+  font:30px/30px "Roboto-Light";
+ }
+/********************************* menu ***************************/
+/** page structure **/
+#content {
+  
+}
+
+header {
+  display: block;
+  width: 100%;
+  height: 52px;
+
+  padding:0px 10px;
+  margin-bottom: 25px;
+}
+.login-user-details {
+    float: right;
+    height: 50px;
+    margin: 0 45px 0 0;
+    max-width: 250px;
+    overflow: hidden;
+    width: 100%;
+}
+ 
+span.user-pic{
+border-radius: 100%;
+    float: left;
+    height: 50px;
+    margin: 0 15px 0 0;
+    max-width: 50px;
+    width: 100%;
+	
+}
+span.user-name{
+font:18px/30px "Roboto-Regular";
+text-transform:uppercase;
+}
+span.arrow-here{
+float: right;
+    margin: 10px 0 0;
+	}
+span.arrow-here a{}
+span.user-id{
+color:804097;
+font:16px/20px "Roboto-Regular";
+}
+#navbar {
+  float: left;
+    max-width: 350px;
+    width: 100%;
+}
+.menubtn {
+  /* needs positioning for z-index http://stackoverflow.com/a/10600930/477958 */
+ background: rgba(0, 0, 0, 0) url("../images/hamburger.png") no-repeat scroll 0 0 / 86% auto;
+    color: #274a61;
+    font-size: 0;
+    height: 40px;
+    left: 263px;
+    padding: 0;
+    position: fixed;
+    text-decoration: none;
+    top:30px;
+    width: 40px;
+    z-index: 105;
+}
+.menubtn:hover, .openmenu .menubtn {
+  color: #bdd43e;
+  background-image: url('../images/hamburger-active.png');
+}
+
+/** toggle menu **/
+body.openmenu {
+  position: fixed;
+  overflow: hidden;
+}
+
+#pgcontainer {
+  padding:30px 0;
+  margin: 0 !important;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 280px !important;
+    position: fixed;
+    right: 0;
+    z-index: 99;
+}
+
+.openmenu .overlay {
+  top: 0;
+}
+
+
+#hamburgermenu {
+  height: 100%;
+  width:280px !important;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  overflow: hidden;
+ 
+}
+#hamburgermenu ul {
+  margin-top:195px;
+  z-index: 101;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#hamburgermenu ul li {
+  display: block;
+  border-bottom: 2px solid #520a7e;
+}
+
+#hamburgermenu ul li a {
+  display: block;
+  
+  padding:35px 8px;
+  color: #fff;
+  font:24px/30px "Roboto-Light";
+ 
+  text-decoration: none;
+  text-align: center;
+}
+#hamburgermenu li a:hover{
+  color: #fff;
+  background:#FF625F;
+}
+#hamburgermenu ul li a:active {
+color: #fff;
+  background:#FF625F;
+  }
+#hamburgermenu ul li a:focus {
+color: #fff;
+  background:#FF625F;
+  }
+/******************************************** menu css end here ******************************/
+.site-content {
+    float: right;
+    padding: 25px 0;
+    width: 96%;
+}
+.upload-sec {
+    border: 1px solid #ebebeb;
+    
+
+   
+    padding: 25px 50px;
+}
+.upload-sec ,
+.edit-add-user,
+.add-posting,
+.new{
+float: none;
+    margin:0px auto;
+    max-width: 875px;
+    width: 100%;
+	}
+	.new{
+	max-width: 1100px;
+    padding: 0;
+	}
+	.new-search{
+	 max-width: 1070px;
+    padding: 0;
+    width: 100%;
+	}
+.upl-file {
+border-radius: 1px;
+    float: left;
+    margin:0 0 10px;
+    width: 100%;
+}
+.upl-file input{
+ background: #fefefe none repeat scroll 0 0;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    float: left;
+    padding:4px 0 !important;
+    width: 50%;
+}
+.submit-butt-1 button {
+margin: 0 25px !important;
+}
+.submit-upld{}
+.site-content button {
+margin: 0 10px 0 0;
+}
+button {
+    background:#A7A8AC;
+    border: medium none;
+    border-radius: 2px;
+    color:#fff;
+    font:14px/20px "Roboto-Regular";
+    margin:0 25px;
+    padding: 5px 20px;
+	    cursor: pointer;
+}
+button:hover {
+    background: #c6c7cb none repeat scroll 0 0;
+    color: #000;
+}
+.edit-left-input{
+float:left;
+margin-bottom:15px;
+}
+.edit-right-input{
+float:right;
+}
+.site-content input[type="textarea"]{
+height: 100px;
+}
+.site-content input[type=checkbox]{
+width: 100px;
+}
+
+ul.heading-strip-purple li.check input[type=checkbox]{
+-webkit-margin-before:17px;
+}
+.site-content select{}
+.site-content p{
+margin: 0 0 20px;
+}
+.site-content label{
+float: left;
+    font: 14px/30px "Roboto-Light";
+    width: 125px;
+	}
+.site-content input,
+.site-content select{
+ border: 1px solid #ededed;
+    padding: 6px 20px;
+    width: 265px;
+	color:#6d6e70;
+	}
+	.site-content ul{}
+	.site-content ul li{
+	display:inline-block;
+	float: left;
+	}
+.site-content ul li img{
+    padding-top:10px;
+}
+	ul.heading-strip-purple
+	{
+	margin:0;
+	background-color:rgba(93, 12, 139, 0.84);
+
+
+	}
+	ul.heading-strip-purple li{
+	color:#fff;
+	padding:0px 0;
+	text-align:center;
+	font:16px/45px "Roboto-Light";
+	}
+	ul.loaded-files-details,
+	ul.search-files-details{
+	border-bottom: 1px solid #eee;
+    padding: 15px 0;
+	 }
+		ul.loaded-files-details li{}
+				ul.loaded-files-details li input{
+				border:none;
+				padding:0;
+				text-align:center;
+				}
+				li.Date,
+				li.Date input{
+				width:125px;
+				}
+				li.Title{
+				width: 250px;
+				}
+				li.Send{
+				width:60px;
+					text-align:center;
+				}
+				li.Result,
+					li.Result input{
+			   width:95px;
+				}
+				li.Status,
+				li.Status input{
+				 width:85px;
+				}
+				li.Audience,
+				li.Audience select{
+			 width: 150px;
+				}
+				li.Audience select{
+				padding: 5px;
+   
+				}
+				li.Copy{
+					width: 60px;
+						text-align:center;
+				}
+				li.Delete{
+					width: 60px;
+						text-align:center;
+				}
+				li.Edit{
+					width: 60px;
+						text-align:center;
+				}
+				
+ul.gray-search{
+margin:0;
+padding:20px 40px;
+background:#F2F2F4;
+}		
+ul.gray-search li input{
+padding: 6px 8px;
+}
+ul.gray-search li.title{
+color: #2b2b2b;
+    letter-spacing: 0.5px;
+    width: 94px;
+}
+ul.gray-search li.First label,
+ul.gray-search li.Last label,
+ul.gray-search li.Email label{
+width:45px;
+}
+ul.gray-search li.First input,
+ul.gray-search li.Last input{
+ width: 105px;
+ margin-right: 12px;
+ }
+ ul.gray-search li.Status{
+width:185px;
+}
+ul.gray-search li.Status label{
+width:55px;
+}
+ul.gray-search li.Status select,
+ul.gray-search li.Sports select{
+width:115px;
+}
+ul.gray-search li.Sports  label{
+ width:55px; 
+	}
+ul.gray-search li.Email input{
+ width: 160px;
+  margin-right: 12px;
+ }	
+ul.gray-search li select{
+padding: 6px 5px;
+}	
+li.butt-reset-search{
+float: right !important;
+    margin: 16px 0 0;
+}		
+ul.search-files-details{}
+ul.search-files-details li{}
+ul.heading-strip-purple li.First,
+ul.search-files-details li.First,
+ul.search-files-details li.First input,
+ ul.heading-strip-purple li.Last,
+ul.search-files-details li.Last,
+ul.search-files-details li.Last input,
+  ul.heading-strip-purple li.Email,
+ul.search-files-details li.Email,
+ul.search-files-details li.Email input,
+  ul.heading-strip-purple li.Sport,
+ul.search-files-details li.Sport,
+ul.search-files-details li.Sport input{
+    width: 140px;
+	}	
+ul.search-files-details li input {
+    border: medium none;
+    padding: 0;
+    text-align: center;
+}
+span.import-xport{
+float: right;
+    max-width:225px;
+    width: 100%;
+	}
+span.import-xport button {
+     margin: 0 8px 0 0;
+    padding: 2px 20px;
+    text-transform: capitalize;
+}
+		

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="commonMenuPage" template="/commonmenutemplate.jsp">
+		<put-attribute name="menu" value="/defaultmenu.jsp"/>
+    </definition>
+    <definition name="loginPage" extends="commonMenuPage">
+	  <put-attribute name="body" value="/login.jsp"/>
+	</definition>
+    <definition name="commonPage" template="/commontemplate.jsp">
+		<put-attribute name="header" value="/defaultheader.jsp" />
+		<put-attribute name="menu" value="/defaultmenu.jsp"/>
+    </definition>
+    <definition name="newSearchPage" extends="commonPage">
+	  <put-attribute name="body" value="/new-search.jsp"/>
+	</definition>
+	<definition name="uploadPage" extends="commonPage">
+	  <put-attribute name="body" value="/upload.jsp"/>
+	</definition>
+	<definition name="editAddUserPage" extends="commonPage">
+	  <put-attribute name="body" value="/edit-user.jsp"/>
+	</definition>
+	<definition name="surveyPage" extends="commonPage">
+	  <put-attribute name="body" value="/new.jsp"/>
+	</definition>
+	<definition name="startPage" template="/starttemplate.jsp">
+		<put-attribute name="header" value="/defaultheader.jsp" />
+		<put-attribute name="menu" value="/defaultmenu.jsp"/>
+    </definition>
+    <definition name="addNewPostPage" extends="commonPage">
+	  <put-attribute name="body" value="/add-new-post.jsp"/>
+	</definition>
+	<definition name="existingUsersPage" extends="commonPage">
+	  <put-attribute name="body" value="/existing-users-search.jsp"/>
+	</definition>
+	<definition name="editCurrentAudiencePage" extends="commonPage">
+	  <put-attribute name="body" value="/edit-current-audience.jsp"/>
+	</definition>
+	<definition name="editAddAudiencePage" extends="commonPage">
+	  <put-attribute name="body" value="/edit-audience.jsp"/>
+	</definition>
+	
+</tiles-definitions>
